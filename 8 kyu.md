@@ -25,3 +25,17 @@ if (x[i] != ' ') arr += x[i];
 return arr;
 }
 ```
+## Sum The Strings
+https://www.codewars.com/kata/5966e33c4e686b508700002d
+```javascript
+function sumStr(a,b) {
+return String(+(a) + +(b));  
+}
+```
+## Do I get a bonus?
+https://www.codewars.com/kata/56f6ad906b88de513f000d96
+```javascript
+function bonusTime(salary, bonus) {
+  return !!bonus ? "\u00A3" + (salary * 10) : "\u00A3" + salary;
+}
+```
