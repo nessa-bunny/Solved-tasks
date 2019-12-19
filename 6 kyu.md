@@ -1,6 +1,6 @@
 #Solved tasks 6 kyu:
 ## Tortoise racing
-https://www.codewars.com/kata/5a5f9f80f5dc3f942b002309
+https://www.codewars.com/kata/55e2adece53b4cdcb900006c
 ```javascript
 function race(v1, v2, g) {
   if (v1 >= v2) return null;
