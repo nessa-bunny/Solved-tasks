@@ -1,0 +1,1 @@
+#Solved tasks 6 kyu:
