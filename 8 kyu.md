@@ -5,7 +5,7 @@ https://www.codewars.com/kata/beginner-lost-without-a-map/train/javascript
 function maps(arr){
   let arr1 = arr.map(function (x) {
   return x * 2;
-})
+  }
   return arr1;
 }
 
@@ -18,18 +18,18 @@ function maps(x){
 https://www.codewars.com/kata/57eae20f5500ad98e50002c5
 ```javascript
 function noSpace(x){
-let arr = [];
-for (let i = 0; i < x.length; ++i) {
-if (x[i] != ' ') arr += x[i];
-}
-return arr;
+    let arr = [];
+    for (let i = 0; i < x.length; ++i) {
+        if (x[i] != ' ') arr += x[i];
+    }
+    return arr;
 }
 ```
 ## Sum The Strings
 https://www.codewars.com/kata/5966e33c4e686b508700002d
 ```javascript
 function sumStr(a,b) {
-return String(+(a) + +(b));  
+    return String(+(a) + +(b));  
 }
 ```
 ## Do I get a bonus?
