@@ -48,8 +48,8 @@ function isSquare(n){
 ```
 #### Filter the number
 https://www.codewars.com/kata/55b051fac50a3292a9000025
-```
-var FilterString = function(value) {
+```javascript
+function FilterString(value) {
   let str = "";
   for (let i = 0; i < value.length; ++i) {
     if (isNaN(value[i]) === false)
