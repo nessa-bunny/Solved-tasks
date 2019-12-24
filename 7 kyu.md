@@ -195,7 +195,109 @@ function twoDecimalPlaces(number) {
   return Math.trunc(number * 100) / 100 ;
 }
 ```
-
+### How many times should I go?
+https://www.codewars.com/kata/57efcb78e77282f4790003d8
+```javascript
+function howManyTimes(annualPrice, individualPrice) {
+  return Math.ceil(annualPrice / individualPrice);
+}
+```
+### Binary Addition
+https://www.codewars.com/kata/551f37452ff852b7bd000139
+```javascript
+function addBinary(a,b) {
+  return (a + b).toString(2);
+}
+```
+### What is type of variable?
+https://www.codewars.com/kata/57293671c98f77e84b000065
+```javascript
+function type(value) {
+  let str = {}.toString.call(value).toLowerCase();
+  return str.substring(8, str.length-1)
+}
+```
+### Is every value in the array an array?
+https://www.codewars.com/kata/582c81d982a0a65424000201
+```javascript
+function arrCheck (value) {
+  for (let i = 0; i < value.length; ++i) {
+  if (Array.isArray(value[i]) == false) return false;
+  }
+  return true;
+}
+```
+### Divide and Conquer
+https://www.codewars.com/kata/57eaec5608fed543d6000021
+```javascript
+function divCon(x){
+  let sum = 0, sumOfStr = 0;
+  for (let i = 0; i < x.length; ++i) {
+    if (typeof x[i] == 'number')
+    sum += x[i];
+    else if (typeof x[i] == 'string')
+    sumOfStr += +x[i];
+  }
+  return sum - sumOfStr;
+}
+```
+### Odd or Even?
+https://www.codewars.com/kata/5949481f86420f59480000e7
+```javascript
+function oddOrEven(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; ++i) {
+    sum += array[i];
+  }
+  return sum % 2 === 0 ? 'even' : 'odd';
+}
+```
+### Sum of Odd Cubed Numbers
+codewars.com/kata/580dda86c40fa6c45f00028a
+```javascript
+function cubeOdd(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; ++i) {
+    if (isNaN(Math.pow(arr[i], 3))) return undefined;
+    if (arr[i] % 2 != 0)
+    sum += Math.pow(arr[i], 3);
+  }
+  return sum;
+}
+```
+### Squares sequence
+https://www.codewars.com/kata/5546180ca783b6d2d5000062
+```javascript
+function squares(x, n) {
+  let arr = [];
+  for (let i = 0; i < n; ++i) {
+    arr.push(x)
+    x = Math.pow(x, 2)
+  }
+  return arr;
+}
+```
+### Remove the minimum
+https://www.codewars.com/kata/563cf89eb4747c5fb100001b
+```javascript
+function removeSmallest(numbers) {
+  numbers = numbers.slice(0);
+  const min = Math.min(...numbers);
+  numbers.splice(numbers.indexOf(min), 1);
+  return numbers;
+}
+```
+### Find the divisors!
+https://www.codewars.com/kata/544aed4c4a30184e960010f4
+```javascript
+function divisors(integer) {
+  let arr = [];
+  for (let i = 2; i < integer; ++i) {
+    if (integer % i === 0) arr.push(i);
+  }
+  return arr.length == 0 ? `${integer} is prime` : arr;
+}
+```
 
 
 
