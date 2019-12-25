@@ -37,5 +37,12 @@ https://www.codewars.com/kata/56f6ad906b88de513f000d96
 ```javascript
 function bonusTime(salary, bonus) {
   return !!bonus ? "\u00A3" + (salary * 10) : "\u00A3" + salary;
+```
+#### A wolf in sheep's clothing
+https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15
+```javascript
+function warnTheSheep(queue) {
+    let i = queue.length - queue.indexOf("wolf") - 1;
+    return i === 0 ? "Pls go away and stop eating my sheep" : `Oi! Sheep number ${i}! You are about to be eaten by a wolf!`;
 }
 ```
