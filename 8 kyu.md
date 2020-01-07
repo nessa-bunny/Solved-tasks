@@ -1,5 +1,5 @@
-# Solved-tasks
-## Beginner - Lost Without a Map
+## Solved tasks 8 kyu:
+#### Beginner - Lost Without a Map
 https://www.codewars.com/kata/beginner-lost-without-a-map/train/javascript
 ```javascript
 function maps(arr){
@@ -14,7 +14,7 @@ function maps(x){
   return x.map(n => n *2);
 }
 ```
-## Remove String Spaces
+#### Remove String Spaces
 https://www.codewars.com/kata/57eae20f5500ad98e50002c5
 ```javascript
 function noSpace(x){
@@ -25,14 +25,14 @@ function noSpace(x){
     return arr;
 }
 ```
-## Sum The Strings
+#### Sum The Strings
 https://www.codewars.com/kata/5966e33c4e686b508700002d
 ```javascript
 function sumStr(a,b) {
     return String(+(a) + +(b));  
 }
 ```
-## Do I get a bonus?
+#### Do I get a bonus?
 https://www.codewars.com/kata/56f6ad906b88de513f000d96
 ```javascript
 function bonusTime(salary, bonus) {
@@ -45,4 +45,4 @@ function warnTheSheep(queue) {
     let i = queue.length - queue.indexOf("wolf") - 1;
     return i === 0 ? "Pls go away and stop eating my sheep" : `Oi! Sheep number ${i}! You are about to be eaten by a wolf!`;
 }
-```
+`
