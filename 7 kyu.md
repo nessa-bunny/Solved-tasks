@@ -298,6 +298,23 @@ function divisors(integer) {
   return arr.length == 0 ? `${integer} is prime` : arr;
 }
 ```
+### Who is the killer?
+https://www.codewars.com/kata/5f709c8fb0d88300292a7a9d/train/javascript
+```
+function includesAll(set, subSet) {
+  for( let el of subSet) {
+    if (!set.includes(el)) return false;
+  }
+  return true;
+}
+
+function killer(suspectInfo, dead) {
+  for (const [suspect, victims] of Object.entries(suspectInfo)) {
+    if (includesAll(victims, dead)) 
+      return suspect;
+  }
+}
+```
 
 
 
